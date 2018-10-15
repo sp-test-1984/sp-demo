@@ -11,7 +11,9 @@ From a folder structure of your choosing, type the Maven command below:
 
 `ipv >> pom.xml`
 
-     ```<dependency>
+
+```
+        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>1.1.6</version>
@@ -22,7 +24,8 @@ From a folder structure of your choosing, type the Maven command below:
             <artifactId>cucumber-junit</artifactId>
             <version>1.1.6</version>
             <scope>test</scope>
-        </dependency>```
+        </dependency>
+```
 
 
 ## Step 3: Add Cucuber Runner
