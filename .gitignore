@@ -2,3 +2,4 @@ ipv/.idea/*
 ipv/target/*
 ipv/.DS_Store
 ipv/out/*
+ipv/out/report.js
