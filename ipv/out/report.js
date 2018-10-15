@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2312932915,
+  "duration": 2307341923,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,21 +37,21 @@ formatter.match({
   "location": "IPSteps.ipvIsAccessible()"
 });
 formatter.result({
-  "duration": 94679440,
+  "duration": 95112203,
   "status": "passed"
 });
 formatter.match({
   "location": "IPSteps.iAttempToConnection()"
 });
 formatter.result({
-  "duration": 7184809318,
+  "duration": 8188486827,
   "status": "passed"
 });
 formatter.match({
   "location": "IPSteps.iShouldSuccessfullyConnect()"
 });
 formatter.result({
-  "duration": 618628209,
+  "duration": 1786593787,
   "status": "passed"
 });
 });

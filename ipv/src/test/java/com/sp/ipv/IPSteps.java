@@ -1,6 +1,5 @@
 package com.sp.ipv;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -75,7 +74,7 @@ public class IPSteps {
 
     public void takeANap() {
         try {
-            Thread.sleep(6000);
+            Thread.sleep(3500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
