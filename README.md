@@ -1,4 +1,4 @@
-# Creating a Basic Cucumber (java) Using Maven
+# Creating a Basic Cucumber Project (java) Using Maven
 
 ## Step 1: Create a Maven Skeleton from a Maven Archetype
 
@@ -11,7 +11,9 @@ From a folder structure of your choosing, type the Maven command below:
 
 `ipv >> pom.xml`
 
-     ```<dependency>
+
+```
+        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>1.1.6</version>
@@ -22,7 +24,8 @@ From a folder structure of your choosing, type the Maven command below:
             <artifactId>cucumber-junit</artifactId>
             <version>1.1.6</version>
             <scope>test</scope>
-        </dependency>```
+        </dependency>
+```
 
 
 ## Step 3: Add Cucuber Runner
@@ -54,7 +57,8 @@ From a folder structure of your choosing, type the Maven command below:
 ## Step 4: Add Build plugin (avoid source 1.5 is not longer an option problem)
 
 
-   ```<build>
+```
+      <build>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -65,12 +69,14 @@ From a folder structure of your choosing, type the Maven command below:
                 </configuration>
             </plugin>
         </plugins>
-      </build>``
+      </build>
+```
+      
+## Step 5: Install 3rd Party jar to Local ( sikulix )
 
-
-## Step 5: Install Sikuli Dependency to .m2 (locally)
 
 ```
     mvn install:install-file -Dfile=./sikulixapi.jar -DartifactId=sikuli-api -DgroupId=org.sikuli -Dversion=100.0 -Dpackaging=jar
 
 ``` 
+
