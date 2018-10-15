@@ -68,4 +68,9 @@ From a folder structure of your choosing, type the Maven command below:
       </build>``
 
 
+## Step 5: Install Sikuli Dependency to .m2 (locally)
 
+```
+    mvn install:install-file -Dfile=./sikulixapi.jar -DartifactId=sikuli-api -DgroupId=org.sikuli -Dversion=100.0 -Dpackaging=jar
+
+``` 
