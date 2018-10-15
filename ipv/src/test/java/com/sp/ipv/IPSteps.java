@@ -74,7 +74,7 @@ public class IPSteps {
 
     public void takeANap() {
         try {
-            Thread.sleep(3500);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
