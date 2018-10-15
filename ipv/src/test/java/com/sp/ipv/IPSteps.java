@@ -46,6 +46,7 @@ public class IPSteps {
 
     @When("^I attemp to connection$")
     public void iAttempToConnection() throws FindFailed {
+        takeANap();
         screen.click(CONN_BUTTON);
         takeANap();
     }
