@@ -1,4 +1,4 @@
-# Creating a Basic Cucumber (java) Using Maven
+# Creating a Basic Cucumber Project (java) Using Maven
 
 ## Step 1: Create a Maven Skeleton from a Maven Archetype
 
