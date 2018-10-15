@@ -28,7 +28,7 @@ From a folder structure of your choosing, type the Maven command below:
 ```
 
 
-## Step 3: Add Cucuber Runner
+## Step 3: Add Cucumber Runner
 
 `src/test/java/com/com/sp/ipv/IPVTest.java`
 
