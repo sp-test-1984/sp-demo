@@ -54,7 +54,8 @@ From a folder structure of your choosing, type the Maven command below:
 ## Step 4: Add Build plugin (avoid source 1.5 is not longer an option problem)
 
 
-   ```<build>
+```
+      <build>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -65,12 +66,14 @@ From a folder structure of your choosing, type the Maven command below:
                 </configuration>
             </plugin>
         </plugins>
-      </build>``
+      </build>
+```
+      
+## Step 5: Install 3rd Party jar to Local ( sikulix )
 
-
-## Step 5: Install Sikuli Dependency to .m2 (locally)
 
 ```
     mvn install:install-file -Dfile=./sikulixapi.jar -DartifactId=sikuli-api -DgroupId=org.sikuli -Dversion=100.0 -Dpackaging=jar
 
 ``` 
+
