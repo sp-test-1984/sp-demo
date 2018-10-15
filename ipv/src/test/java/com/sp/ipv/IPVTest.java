@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         snippets = SnippetType.CAMELCASE,
-        plugin = "html:out"
+        plugin = "html:out",
+        features = "src/test/resources"
         )
 public class IPVTest {
 }
