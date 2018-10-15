@@ -32,7 +32,7 @@ public class IPSteps {
     @Before
     public void setUp() {
         myIpAddress = getMyIP();
-        System.out.println("ip address: " + myIpAddress);
+        System.out.println(" ip address: " + myIpAddress);
     }
 
     @Given("^IPV is accessible$")
