@@ -1,5 +1,6 @@
 package com.sp.ipv;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -20,6 +21,7 @@ public class IPSteps {
 
     private final String IPVANISH_PATH = "/Applications/IPVanish VPN.app";
     private final String CONN_BUTTON = "src/test/resources/images/connect_button.png";
+    private final String DISCONN_BUTTON = "src/test/resources/images/disconnect_button.png";
     private final String WHAT_IS_MYIP = "http://bot.whatismyipaddress.com";
     private Screen screen;
     private String myIpAddress;
@@ -32,6 +34,15 @@ public class IPSteps {
     public void setUp() {
         myIpAddress = getMyIP();
         System.out.println("ip address: " + myIpAddress);
+    }
+
+    @After
+    public void tearDown(){
+        try {
+            screen.click(DISCONN_BUTTON);
+        } catch (FindFailed e) {
+            System.err.println(e.getMessage());
+        }
     }
 
     @Given("^IPV is accessible$")
