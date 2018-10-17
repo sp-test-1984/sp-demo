@@ -40,6 +40,7 @@ public class IPSteps {
     public void tearDown(){
         try {
             screen.click(DISCONN_BUTTON);
+            takeANap();
         } catch (FindFailed e) {
             System.err.println(e.getMessage());
         }
